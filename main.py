@@ -117,6 +117,7 @@ def fetch_all_data(dashboard_config):
             else:
                 print(f"❌ No records found for {item['name']}")
                 all_data[item["name"]] = []
+            
         except Exception as e:
             print(f"❌ Error fetching {item['name']}: {e}")
             all_data[item["name"]] = []

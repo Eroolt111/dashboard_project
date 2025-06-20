@@ -1,3 +1,4 @@
+from fetchers.fetch_last_12_quarters import fetch_last_12_quarters
 from fetchers.fetch_last_8_years import fetch_last_8_years
 from fetchers.fetch_last_12_months import fetch_last_12_months
 from fetchers.fetch_last_4_quarters import fetch_last_4_quarters
@@ -9,8 +10,9 @@ dashboard_config = [
     {"topic": "General Indicators", "name": "GDP by Sector", "tbl_id": "DT_NSO_0500_002V1", "fetch_func": fetch_last_8_years},
     {"topic": "General Indicators", "name": "National Income", "tbl_id": "DT_NSO_0500_009V1", "fetch_func": fetch_last_8_years},
     {"topic": "General Indicators", "name": "Exchange Rate", "tbl_id": "DT_NSO_0700_008V1", "fetch_func": fetch_last_12_months},
-    {"topic": "General Indicators", "name": "Inflation Rate", "tbl_id": "DT_NSO_0600_004V1", "fetch_func": fetch_last_8_years},
+    {"topic": "General Indicators", "name": "Inflation Rate", "tbl_id": "DT_NSO_0600_013V1", "fetch_func": fetch_last_8_years},
     {"topic": "General Indicators", "name": "Unemployment Rate", "tbl_id": "DT_NSO_0400_049V1", "fetch_func": fetch_last_8_years},
+    {"topic": "General Indicators", "name": "Number of active enterprises", "tbl_id": "DT_NSO_2600_014V1", "fetch_func": fetch_last_4_quarters},
 
     # 3. Гадаад худалдаа
     {"topic": "Foreign Trade", "name": "Total Trade/Import/Export", "tbl_id": "DT_NSO_1400_001V1", "fetch_func": fetch_last_8_years},
@@ -40,6 +42,9 @@ dashboard_config = [
     {"topic": "Productivity", "name": "Labor Productivity", "tbl_id": "DT_NSO_2500_001V2", "fetch_func": fetch_last_8_years},
     {"topic": "Productivity", "name": "GDP per Worker by Sector", "tbl_id": "DT_NSO_0500_010V2", "fetch_func": fetch_last_8_years},
     {"topic": "Productivity", "name": "GDP per Worker by Quarter", "tbl_id": "DT_NSO_0500_011V3", "fetch_func": fetch_last_4_quarters},
+    {"topic": "Productivity", "name": "Monthly average income per household", "tbl_id": "DT_NSO_1900_018V1", "fetch_func": fetch_last_12_quarters},
+    {"topic": "Productivity", "name": "Monthly median wages", "tbl_id": "DT_NSO_0400_069V2", "fetch_func": fetch_last_12_quarters},
+    {"topic": "Productivity", "name": "Labour force", "tbl_id": "DT_NSO_0400_012V1", "fetch_func": fetch_last_12_quarters},
 
     # 7. Мөнгө, санхүү
     {"topic": "Finance", "name": "Bank Balance Sheet", "tbl_id": "DT_NSO_0700_010V1", "fetch_func": fetch_last_12_months},
